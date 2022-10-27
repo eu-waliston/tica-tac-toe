@@ -1,0 +1,82 @@
+* {
+    background-color: rgb(4, 69, 107);
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size:50px;
+}
+
+/* Tabuleiro */
+
+#tabuleiro{
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 195px);
+
+    gap: 20px;
+}
+
+#area1, #area2, #area3, #area4, #area5, #area6, #area7, #area8, #area9 {
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#area1:hover, #area2:hover, #area3:hover, #area4:hover, #area5:hover, #area6:hover, #area7:hover, #area8:hover, #area9:hover {
+    background-color: rgb(62, 201, 206);
+    transition: all 0.5s;
+}
+
+
+input[type=text]{
+    -webkit-appearance:none; 
+    outline-color:#F00;
+    padding:30px;
+    border:2px solid #03F;
+    box-sizing: border-box;
+    font-size:50px;
+    max-width:240px;
+    text-indent: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+/* players Side */
+#players-side {
+    background-color: aqua;
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+h2 {
+    background-color: aqua;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+label, input {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+.win {
+    color: rgb(17, 163, 17);
+}
